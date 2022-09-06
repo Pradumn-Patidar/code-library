@@ -1,9 +1,12 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-const int N=2e5+20,L=log2(N)+20;
+const int N=2e5+20;
+const int L= log2(N) + 20;
 
-int n,m,u,v,lev[N],par[N],lca[N][L],dp[N],ans[N];
+int n,m,u,v,lev[N],par[N];
+int lca[N][L];
+int dp[N], ans[N];
 vector <int> adj[N];
 
 void dfs(int node,int parent,int depth)

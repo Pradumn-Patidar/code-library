@@ -3,7 +3,7 @@ using namespace std;
 
 const int N=2e5+20;
 
-int n,m,q,u,k,lev[N],par[N],lca[N][(int)log2(N)+10];
+int n,m,q,u,k,lev[N],par[N], lca[N][(int)(log2(N)+10)];
 vector <int> adj[N];
 
 void dfs(int node,int parent,int depth)
